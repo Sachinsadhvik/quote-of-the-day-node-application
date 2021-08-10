@@ -25,17 +25,23 @@ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3
     left:0;
     bottom:0;
     top:0;
-    border: solid rgb(184, 23, 23);
+    border: solid rgb(235, 212, 212);
+    color:white;
     }
-    
+    span{
+        size:25px;
+        color:rgb(211, 134, 19);
+        padding:10px
+    }
     body {
-        background-color: azure;
+        background-color: rgb(1, 24, 24,0.7);
     }
     </style>
 <body> 
     
-   <div class="container"><h3><%= quote %> &ensp; &ensp;&ensp;&ensp;&ensp;&nbsp;<%= author %></h3>
-    
+   <div class="container"><h3><%= quote %> <span><%= author %></span> </h3>
+   
 </div>
 </body>
+
 </html>
