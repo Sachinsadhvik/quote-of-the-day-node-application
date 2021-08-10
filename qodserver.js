@@ -18,7 +18,7 @@ getA().then(received=>{ //var result= received.data.contents.quotes;
 })
 
 
-
+console.log("hello")
 async function getA() {
 //const result = await axios.get("https://quotes.rest/qod");
 return result="fessssssss";
