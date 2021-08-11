@@ -9,8 +9,8 @@ app.get('/',(req,res)=> {
 getA().then(received=>{ var result= received.data.contents.quotes;
         for(items in result)
         {   res.render("QUOTE",{
-            quote:"The human mind and body are truly extraordinary. They are the quintessence of excellence in motion. We talk, touch, see, hear, taste, smell, and feel. We dream, aspire, and become. All that we are is mind and body and spirit-that is our universe."       
-            ,author: "Lorii Myers"//result[items].author
+            quote:result[items].quote
+            ,author: result[items].author
         })
         }
 }).catch(err=>{ console.log(err)})
@@ -19,7 +19,7 @@ getA().then(received=>{ var result= received.data.contents.quotes;
 })
 async function getA() {
 const result = await axios.get("https://quotes.rest/qod");
-return result="fsds";
+return result;
 }
 
 
