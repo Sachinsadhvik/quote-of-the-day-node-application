@@ -5,7 +5,7 @@
   "main": "quoteserver.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon qodserver.js"
+    "start": "node qodserver.js"
   },
   "author": "",
   "license": "ISC",

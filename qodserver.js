@@ -2,7 +2,7 @@
 const express = require('express');
 const axios = require('axios');
 var app = express();
-port= 5000 || process.env.PORT;
+port= process.env.PORT || 5000;
 app.set('views','VIEW');
 app.set('view engine',"ejs");
 app.get('/',(req,res)=> {
